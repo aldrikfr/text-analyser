@@ -1,6 +1,6 @@
 stopwords = %w[the a by on for of are with just but and to the my I has some in]
 
-lines = File.readlines('text.txt')
+lines = File.readlines(ARGV[0])
 line_count = lines.size
 text = lines.join
 
