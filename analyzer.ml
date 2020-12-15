@@ -21,15 +21,15 @@ let good_words =
 let good_percentage = List.(length good_words / length all_words) * 100
 
 let () =
-  Out_channel.printf "%u lines" line_count;
-  Out_channel.printf "%u characters" character_count;
-  Out_channel.printf "%u characters (excluding spaces)" character_count_no_space;
-  Out_channel.printf "%u words" word_count;
-  Out_channel.printf "%u sentences" sentence_count;
-  Out_channel.printf "%u paragraphs" paragraph_count;
+  Out_channel.printf "%u lines\n" line_count;
+  Out_channel.printf "%u characters\n" character_count;
+  Out_channel.printf "%u characters (excluding spaces)\n" character_count_no_space;
+  Out_channel.printf "%u words\n" word_count;
+  Out_channel.printf "%u sentences\n" sentence_count;
+  Out_channel.printf "%u paragraphs\n" paragraph_count;
   Out_channel.printf "%u sentences per paragraph
-(average)" (sentence_count / paragraph_count);
-  Out_channel.printf "%u words per sentence (average)" (word_count / sentence_count);
-  Out_channel.printf "%u of words are non-fluff words" good_percentage
+(average)\n" (sentence_count / paragraph_count);
+  Out_channel.printf "%u words per sentence (average)\n" (word_count / sentence_count);
+  Out_channel.printf "%u of words are non-fluff words\n" good_percentage
 
 
